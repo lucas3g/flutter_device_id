@@ -11,19 +11,14 @@ class FlutterDeviceIdPluginImpl(private val context: Context) : MethodChannel.Me
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: MethodChannel.Result) {
         if (call.method == FlutterDeviceIdConstants.DEVICE_ID) {
-            val android = getAndroidId()
-            if (android.isEmpty()) {
-                result.success("")
-            }
             result.success(getAndroidId())
         } else {
             result.notImplemented()
         }
     }
 
-
     @SuppressLint("HardwareIds")
     private fun getAndroidId(): String {
-        return Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
+        return Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID) ?: ""
     }
 }

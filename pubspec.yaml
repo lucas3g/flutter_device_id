@@ -1,8 +1,8 @@
 name: flutter_device_id
 description: Get current  deviceId from within the Flutter application. Android(android_Id), IOS(IDFV)
-version: 1.0.1
-repository: https://github.com/Flyforwards/flutter_device_id.git
-issue_tracker: https://github.com/Flyforwards/flutter_device_id/issues
+version: 1.0.2
+repository: https://github.com/lucas3g/flutter_device_id.git
+issue_tracker: https://github.com/lucas3g/flutter_device_id/issues
 
 environment:
   sdk: '>=3.0.3 <4.0.0'
@@ -16,7 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
