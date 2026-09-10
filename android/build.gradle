@@ -1,5 +1,5 @@
 group = "com.fy.flutter_device_id"
-version = "1.0.2"
+version = "1.0.3"
 
 rootProject.allprojects {
     repositories {
@@ -9,7 +9,6 @@ rootProject.allprojects {
 }
 
 apply plugin: "com.android.library"
-apply plugin: "kotlin-android"
 
 android {
     namespace = "com.fy.flutter_device_id"
@@ -20,15 +19,17 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
     }
 
     defaultConfig {
         minSdk = 21
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }

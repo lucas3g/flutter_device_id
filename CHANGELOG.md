@@ -1,3 +1,10 @@
+## 1.0.3
+
+* Android: migra para o Kotlin embutido do AGP (Built-in Kotlin), removendo o
+  plugin `kotlin-android` e substituindo `kotlinOptions` por
+  `kotlin { compilerOptions { ... } }`.
+* Requer Flutter >= 3.44.0, Dart >= 3.12.0 e AGP 9+ no app consumidor.
+
 ## 1.0.2
 
 * Fork de `Flyforwards/flutter_device_id` compatível com o Android Gradle Plugin 8.
