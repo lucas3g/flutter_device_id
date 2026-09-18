@@ -1,3 +1,11 @@
+## 1.0.4
+
+* iOS: adiciona suporte ao Swift Package Manager, eliminando o aviso
+  "The following plugins do not support Swift Package Manager for ios".
+* iOS: fontes movidas de `ios/Classes/` para
+  `ios/flutter_device_id/Sources/flutter_device_id/`, com `Package.swift` novo e
+  `podspec` apontando para o novo caminho (CocoaPods continua funcionando).
+
 ## 1.0.3
 
 * Android: migra para o Kotlin embutido do AGP (Built-in Kotlin), removendo o

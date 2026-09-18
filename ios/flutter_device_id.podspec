@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_device_id'
-  s.version          = '1.0.2'
+  s.version          = '1.0.4'
   s.summary          = 'Get the current deviceId from within a Flutter application.'
   s.description      = <<-DESC
 Get the current deviceId from within a Flutter application. Android (ANDROID_ID), iOS (IDFV).
@@ -13,7 +13,7 @@ Get the current deviceId from within a Flutter application. Android (ANDROID_ID)
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'EL Sistemas' => 'desenvolvimento@elinfo.com.br' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'flutter_device_id/Sources/flutter_device_id/**/*.swift'
   s.dependency 'Flutter'
   s.platform = :ios, '13.0'
 
